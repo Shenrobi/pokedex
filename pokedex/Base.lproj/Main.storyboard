@@ -40,14 +40,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IUz-Hd-VdP">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IUz-Hd-VdP" customClass="PokeCell" customModule="pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="sPe-ps-xEg">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="sPe-ps-xEg">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="A8l-Tc-C36"/>
                                                     </constraints>
@@ -70,6 +70,10 @@
                                             <constraint firstItem="sPe-ps-xEg" firstAttribute="top" secondItem="IUz-Hd-VdP" secondAttribute="top" id="hOx-cG-HIY"/>
                                             <constraint firstItem="rbW-tT-wea" firstAttribute="leading" secondItem="IUz-Hd-VdP" secondAttribute="leading" id="l3X-PW-Mu7"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="rbW-tT-wea" id="gWa-Bc-LIe"/>
+                                            <outlet property="thumbImage" destination="sPe-ps-xEg" id="Pq4-I8-x4x"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
